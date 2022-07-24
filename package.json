@@ -1,0 +1,28 @@
+{
+  "name": "whatsapp-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+ 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix whatsapp-mern && npm run build --prefix whatsapp-mern"
+
+
+  },
+  "author": "Aroob",
+  "license": "ISC",
+  "engines": {
+    "node": "14.17.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "init": "^0.1.2",
+    "mongoose": "^6.4.4",
+    "pusher": "^5.1.1-beta",
+    "pusher-js": "^7.2.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
